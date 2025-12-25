@@ -12,12 +12,10 @@ class LiveDoctorsCardSection extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          /// Section Heading
           Text('Live Doctors', style: AppTextStyles.title),
 
           SizedBox(height: context.hp(0.5)),
 
-          /// Cards (Direct, no builder)
           SizedBox(
             height: context.hp(23),
             child: SingleChildScrollView(
@@ -38,7 +36,6 @@ class LiveDoctorsCardSection extends StatelessWidget {
     );
   }
 
-  /// Single Doctor Card
   Widget doctorCard(BuildContext context, String imagePath) {
     return Card(
       elevation: 4,
@@ -55,7 +52,6 @@ class LiveDoctorsCardSection extends StatelessWidget {
               fit: BoxFit.cover,
             ),
 
-            /// Play Button
             Container(
               padding: const EdgeInsets.all(10),
               decoration: const BoxDecoration(

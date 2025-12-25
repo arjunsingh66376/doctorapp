@@ -26,7 +26,7 @@ class _BottomtabnavigationpageState extends State<Bottomtabnavigationpage> {
     return Scaffold(
       bottomNavigationBar: CurvedNavigationBar(
         buttonBackgroundColor: Colors.white,
-        //  change  the background color  according to  themee like  when   theme is  white then  put the  bg   color    white
+
         backgroundColor: Color(0xFF22C55E),
         color: Colors.white,
         items: <Widget>[

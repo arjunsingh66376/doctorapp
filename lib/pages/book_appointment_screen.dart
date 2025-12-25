@@ -28,26 +28,22 @@ class _BookAppointmentScreenState extends State<BookAppointmentScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            /// ✅ DOCTOR CARD (LIKE SCREENSHOT)
             _doctorCard(),
 
             const SizedBox(height: 24),
 
-            /// Afternoon Slots
             Text('Afternoon Slots', style: AppTextStyles.title),
             const SizedBox(height: 8),
             _slotWrap(widget.doctor.slots['afternoon'] ?? []),
 
             const SizedBox(height: 20),
 
-            /// Evening Slots
             Text('Evening Slots', style: AppTextStyles.title),
             const SizedBox(height: 8),
             _slotWrap(widget.doctor.slots['evening'] ?? []),
 
             SizedBox(height: context.hp(5)),
 
-            /// Book Button
             Center(child: Primarybutton(onpressfunction: _bookAppointment)),
             SizedBox(height: context.hp(2)),
           ],
@@ -56,7 +52,6 @@ class _BookAppointmentScreenState extends State<BookAppointmentScreen> {
     );
   }
 
-  // ================= DOCTOR CARD =================
   Widget _doctorCard() {
     return Container(
       padding: const EdgeInsets.all(14),
@@ -67,7 +62,6 @@ class _BookAppointmentScreenState extends State<BookAppointmentScreen> {
       ),
       child: Row(
         children: [
-          /// Doctor Image
           CircleAvatar(
             radius: 32,
             backgroundImage: AssetImage(widget.doctor.image),
@@ -75,7 +69,6 @@ class _BookAppointmentScreenState extends State<BookAppointmentScreen> {
 
           const SizedBox(width: 12),
 
-          /// Doctor Info
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -87,8 +80,6 @@ class _BookAppointmentScreenState extends State<BookAppointmentScreen> {
                   style: AppTextStyles.subtitle,
                 ),
                 const SizedBox(height: 6),
-
-                /// ⭐ Rating
                 Row(
                   children: List.generate(5, (index) {
                     return Icon(
@@ -108,7 +99,6 @@ class _BookAppointmentScreenState extends State<BookAppointmentScreen> {
     );
   }
 
-  // ================= SLOT UI =================
   Widget _slotWrap(List<String> slots) {
     return Wrap(
       spacing: 10,
@@ -143,7 +133,6 @@ class _BookAppointmentScreenState extends State<BookAppointmentScreen> {
     );
   }
 
-  // ================= BOOK LOGIC =================
   void _bookAppointment() {
     if (selectedSlot == null) {
       Fluttertoast.showToast(

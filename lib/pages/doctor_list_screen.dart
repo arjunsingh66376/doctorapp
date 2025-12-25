@@ -15,25 +15,20 @@ class DoctorListScreen extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          /// 🔹 Header Section (ONLY this uses Stack)
           Stack(
             clipBehavior: Clip.none,
             children: [
               CustomAppBar(),
 
               Positioned(
-                bottom: -context.hp(3), // 👈 overlap control
+                bottom: -context.hp(3),
                 left: 0,
                 right: 0,
                 child: const CustomSearchBar(),
               ),
             ],
           ),
-
-          /// Space created by overlap
           SizedBox(height: context.hp(6)),
-
-          /// 🔹 Rest of the Page (NORMAL layout)
           Expanded(
             child: SingleChildScrollView(
               padding: EdgeInsets.only(bottom: 40),

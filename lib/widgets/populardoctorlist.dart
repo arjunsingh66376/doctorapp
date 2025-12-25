@@ -46,7 +46,6 @@ class Populardoctorlist extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      /// Doctor Image (TOP)
                       ClipRRect(
                         borderRadius: const BorderRadius.vertical(
                           top: Radius.circular(20),
@@ -61,7 +60,6 @@ class Populardoctorlist extends StatelessWidget {
 
                       SizedBox(height: context.hp(1.5)),
 
-                      /// Doctor Name
                       Text(
                         doctor.name,
                         textAlign: TextAlign.center,
@@ -73,7 +71,6 @@ class Populardoctorlist extends StatelessWidget {
 
                       const SizedBox(height: 4),
 
-                      /// Specialization
                       Text(
                         doctor.specialization,
                         style: AppTextStyles.subtitle,
@@ -81,7 +78,6 @@ class Populardoctorlist extends StatelessWidget {
 
                       const SizedBox(height: 6),
 
-                      /// Rating
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: List.generate(5, (index) {

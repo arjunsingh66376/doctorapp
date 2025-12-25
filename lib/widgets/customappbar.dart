@@ -29,9 +29,8 @@ class CustomAppBar extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              // LEFT: texts (tight column)
               Column(
-                mainAxisSize: MainAxisSize.min, // 🔑 no extra spacing
+                mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text('Hi Priya !', style: AppTextStyles.appbarheading),
@@ -42,7 +41,6 @@ class CustomAppBar extends StatelessWidget {
                 ],
               ),
 
-              // RIGHT: avatar (same size)
               CircleAvatar(
                 radius: context.wp(8),
                 backgroundImage: const AssetImage(
