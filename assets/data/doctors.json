@@ -1,0 +1,23 @@
+[
+  { "id": 1,  "name": "Dr. Amit Sharma",        "specialization": "Cardiologist",            "rating": 4.6,   "image" : "assets/images/newdoctor1.jpg"  , "slots": {
+      "afternoon": ["1:00 PM", "1:30 PM", "2:00 PM","3:00 PM"],
+      "evening": ["5:00 PM", "5:30 PM","6:00 PM","7:00 PM","8:00 PM"]
+    }   },
+  { "id": 2,  "name": "Dr. Pooja Mehta",         "specialization": "Dermatologist",           "rating": 4.4, "image" : "assets/images/newdoctor2.jpg" ,  "slots": {
+      "afternoon": ["12:00 PM", "12:30 PM","1:00 PM","1:30 PM","2:00 PM"],
+      "evening": ["6:00 PM", "6:30 PM", "7:00 PM"]
+    }  },
+  { "id": 3,  "name": "Dr. Rakesh Iyer",         "specialization": "Orthopedic Surgeon",      "rating": 4.7 ,"image" : "assets/images/newdoctor3.jpg"  , "slots": {
+      "afternoon": ["1:00 PM", "2:30 PM", "3:00 PM" ,"4:00 PM"],
+      "evening": ["9:00 PM", "6:30 PM", "10:00 PM"]
+    } },
+  { "id": 4,  "name": "Dr. Neha Verma",          "specialization": "Gynecologist",            "rating": 4.5 ,"image" : "assets/images/newdoctor4.jpg",  "slots": {
+      "afternoon": ["3:00 PM", "5:30 PM"],
+      "evening": ["7:00 PM", "6:30 PM", "8:00 PM","9:00 PM"]
+    }   },
+  { "id": 5,  "name": "Dr. Sandeep Kulkarni",    "specialization": "Neurologist",              "rating": 4.3 ,"image" : "assets/images/newdoctor5.jpg" , "slots": {
+      "afternoon": ["12:00 PM", "2:30 PM"],
+      "evening": ["6:30 PM", "7:00 PM"]
+    }   }
+  
+]

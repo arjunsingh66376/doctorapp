@@ -1,0 +1,26 @@
+import 'package:doctorapp/widgets/custombottomnavbar.dart';
+import 'package:doctorapp/pages/doctor_list_screen.dart';
+import 'package:doctorapp/pages/splash_screen.dart';
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      initialRoute: "/",
+      routes: {
+        '/': (context) => const SplashScreen(),
+        '/doctors': (context) => const DoctorListScreen(),
+        '/bottomnav': (context) => const Bottomtabnavigationpage(),
+      },
+    );
+  }
+}
