@@ -1,16 +1,20 @@
-# doctorapp
+# Doctor Appointment App (Flutter)
 
-A new Flutter project.
+A simple Flutter application that allows users to browse doctors, view details, select available time slots, and book appointments using local JSON data.
+I had  spent 2–3 days end-to-end implementation including UI design, local data handling, and appointment booking flow  on this project.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 How to Run the Project
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone the repository:
+   git clone https://github.com/arjunsingh66376/doctorapp.git
+   
+2. Navigate to the project directory :
+    cd doctorapp
+  
+3. Install dependencies:
+   flutter pub get
+   
+4. Run the app on a device or emulator:
+   flutter run
